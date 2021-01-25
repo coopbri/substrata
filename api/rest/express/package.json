@@ -1,5 +1,6 @@
 {
   "name": "express",
+  "private": true,
   "license": "MIT",
   "scripts": {
     "dev": "tsnd --respawn --quiet --transpile-only src/server.ts"
