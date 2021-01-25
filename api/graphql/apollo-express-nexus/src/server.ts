@@ -1,7 +1,7 @@
 import express from "express";
 import { ApolloServer } from "apollo-server-express";
 
-import schema from "./graphql/schema";
+import { schema } from "./graphql";
 
 const { PORT = 4000 } = process.env;
 
