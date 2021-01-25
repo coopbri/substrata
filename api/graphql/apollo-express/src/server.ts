@@ -13,6 +13,6 @@ server.applyMiddleware({ app });
 // start server process
 app.listen(PORT, () => {
   console.log(
-    `🚀 GraphQL server ready at http://localhost:${PORT}${server.graphqlPath}`
+    `🚀 GraphQL API server ready at http://localhost:${PORT}${server.graphqlPath}`
   );
 });
