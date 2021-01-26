@@ -1,13 +1,23 @@
 <div align="center">
 <img alt="substrata logo" src="lib/assets/img/substrata-logo-rounded.png" height="150px"/>
-<p style="font-size: 26px;">SUBSTRATA</p>
-<p style="font-size: 16px;">A curated list of project templates</p>
+<h2>SUBSTRATA</h2>
+<h3>A curated list of project templates</h3>
 </div>
 
 <hr>
 
 ## Overview
 Substrata is a highly opinionated set of templates that I use for projects.
+
+- `api`: Backend APIs
+  - `graphql`: GraphQL APIs
+    - `apollo-express`: Apollo Server binding on Express
+    - `apollo-express-nexus`: Apollo Server binding on Express + GraphQL Nexus
+    - `apollo-express-nexus-prisma`: Apollo Server binding on Express + GraphQL Nexus + Prisma
+  - `rest`: REST APIs
+    - `express`: Express
+- `client`: Frontend web clients
+  - `next`: basic Next.js
 
 ## Roadmap (Upcoming Features)
 - APIs
