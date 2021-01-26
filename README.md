@@ -17,7 +17,7 @@ Substrata is a highly opinionated set of templates that I use for projects.
   - `rest`: REST APIs
     - `express`: Express
 - `client`: Frontend web clients
-  - `next`: basic Next.js
+  - `next`: Next.js
 
 ## Roadmap (Upcoming Features)
 - APIs
