@@ -18,6 +18,9 @@ Substrata is a highly opinionated set of templates that I use for projects.
     - `express`: Express
 - `client`: Frontend web clients
   - `next`: Next.js
+- `containers`: Containers
+  - `docker`: Docker configuration files (e.g. `Dockerfile`, `.dockerignore`)
+    - `yarn`: Yarn package manager
 
 ## Roadmap (Upcoming Features)
 - APIs
