@@ -1,0 +1,39 @@
+# Dependabot is, unfortunately, native to GitHub, although there are community
+#   forks/spins for other git hosts.
+#   TODO find a more flexible FOSS dependency updater.
+
+version: 2
+# Update packages daily
+updates:
+  # Dependabot does not support glob pattern matching :(
+  # Track: https://github.com/dependabot/dependabot-core/issues/2178
+
+  # API TEMPLATES
+  - package-ecosystem: "npm"
+    directory: "/api/graphql/apollo-express"
+    schedule:
+      interval: daily
+  - package-ecosystem: "npm"
+    directory: "/api/graphql/apollo-express-nexus"
+    schedule:
+      interval: daily
+  - package-ecosystem: "npm"
+    directory: "/api/graphql/apollo-express-nexus-prisma"
+    schedule:
+      interval: daily
+  - package-ecosystem: "npm"
+    directory: "/api/rest/express"
+    schedule:
+      interval: daily
+
+  # CLIENT TEMPLATES
+  - package-ecosystem: "npm"
+    directory: "/client/next"
+    schedule:
+      interval: daily
+
+  # DOCKER TEMPLATES
+    - package-ecosystem: "docker"
+    directory: "/containers/docker/yarn"
+    schedule:
+      interval: daily
