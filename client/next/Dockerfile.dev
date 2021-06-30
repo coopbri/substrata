@@ -1,0 +1,14 @@
+FROM node:alpine
+
+# disable Next.js telemetry
+ENV NEXT_TELEMETRY_DISABLED=1
+
+WORKDIR /app
+COPY package.json .
+
+# install dependencies
+RUN yarn install --ignore-optional
+
+COPY . .
+
+CMD ["yarn", "dev"]

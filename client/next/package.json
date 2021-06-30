@@ -1,20 +1,74 @@
 {
   "name": "next",
   "private": true,
-  "license": "MIT",
+  "license": "UNLICENSED",
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json",
+      "jsx"
+    ],
+    "setupFilesAfterEnv": [
+      "./jest.setup.ts"
+    ],
+    "testPathIgnorePatterns": [
+      "./.next/",
+      "./node_modules/"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ]
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint:eslint": "eslint 'src/**/*.{ts,tsx}'",
+    "lint:tsc": "tsc --noemit",
+    "lint": "run-p lint:*",
+    "test": "jest",
+    "test:watch": "jest --watchAll --no-cache",
+    "prepare": "husky install"
   },
   "devDependencies": {
-    "@types/node": "^14.14.22",
-    "@types/react": "^17.0.0",
-    "typescript": "^4.1.3"
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.12.5",
+    "@types/react": "^17.0.11",
+    "@types/styled-components": "^5.1.10",
+    "@typescript-eslint/eslint-plugin": "^4.28.1",
+    "@typescript-eslint/parser": "^4.28.1",
+    "babel-jest": "^27.0.6",
+    "eslint": "^7.29.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-unused-imports": "^1.1.1",
+    "husky": "^6.0.0",
+    "jest": "^27.0.6",
+    "lint-staged": "^11.0.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.3.2",
+    "typescript": "^4.3.4"
   },
   "dependencies": {
-    "next": "10.0.5",
-    "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "next": "11.0.1",
+    "react": "17.0.2",
+    "react-div-100vh": "^0.6.0",
+    "react-dom": "17.0.2",
+    "shakti-lib": "^0.2.2",
+    "styled-components": "^5.3.0"
   }
 }

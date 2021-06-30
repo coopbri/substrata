@@ -1,0 +1,16 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "extends": ["prettier"],
+  "plugins": [
+    "@typescript-eslint",
+    "prettier",
+    "react",
+    "react-hooks",
+    "unused-imports"
+  ],
+  "rules": {
+    "prettier/prettier": ["error"],
+    "unused-imports/no-unused-imports": "error"
+  }
+}
