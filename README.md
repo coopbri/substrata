@@ -7,7 +7,7 @@
 <hr>
 
 ## Overview
-Substrata is a highly opinionated set of templates that I use for projects.
+Substrata is a highly opinionated set of templates that I use for projects. Each template is designed to be self-sufficient and isolated.
 
 - `api`: Backend APIs
   - `graphql`: GraphQL APIs
@@ -17,12 +17,14 @@ Substrata is a highly opinionated set of templates that I use for projects.
   - `rest`: REST APIs
     - `express`: Express
 - `client`: Frontend web clients
-  - `next`: Next.js
+  - `next`: Next.js (React)
 - `containers`: Containers
   - `docker`: Docker configuration files (e.g. `Dockerfile`, `.dockerignore`)
     - `yarn`: Yarn package manager
 
 ## Roadmap (Upcoming Features)
+- Composition of templates (minimize code duplication)
+- Script(s) to bootstrap templates
 - APIs
     - Authentication
     - Input/request validation
